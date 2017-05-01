@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+ 	android:layout_height="wrap_content" 
+	android:background="#FFFFFF" >
+	
+    <EditText
+        android:id="@+id/edit_registration"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_weight="3"
+        android:inputType="textCapCharacters|textNoSuggestions"
+        android:maxLength="3" 
+		android:digits="0123456789QWERTZUIOPASDFGHJKLYXCVBNM" />
+    
+    <EditText
+        android:id="@+id/edit_p1Num"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_column="1"
+        android:layout_gravity="left|top"
+        android:layout_weight="2"
+        android:inputType="number"
+        android:maxLength="5" 
+		android:digits="0123456789" />
+    
+    <EditText
+        android:id="@+id/edit_p1Name"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_column="2"
+        android:layout_gravity="left|top"
+        android:layout_weight="8"
+        android:inputType="textNoSuggestions" 
+    	android:digits="qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM " />
+        
+    <EditText
+        android:id="@+id/edit_p2Num"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"        
+        android:layout_column="3"
+        android:layout_gravity="left|top"
+        android:layout_weight="2"
+        android:inputType="number"
+        android:maxLength="5" 
+    	android:digits="0123456789" />
+    
+    <EditText
+        android:id="@+id/edit_p2Name"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"        
+        android:layout_column="4"
+        android:layout_gravity="left|top"
+        android:layout_weight="8"
+        android:inputType="textNoSuggestions" 
+        android:digits="qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM " />
+    
+    <EditText
+        android:id="@+id/edit_launch"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_column="5"
+        android:layout_gravity="left|top"
+        android:layout_weight="2"
+        android:inputType="textCapCharacters|textNoSuggestions"
+        android:maxLength="1" 
+		android:digits="WAB" />
+    
+    <EditText
+        android:id="@+id/edit_toTime"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"        
+        android:layout_column="6"
+        android:layout_gravity="left|top"
+        android:layout_weight="3"
+        android:maxLength="4"
+        android:inputType="time" 
+ 		android:digits="0123456789" />
+    
+    <EditText
+        android:id="@+id/edit_landTime"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"        
+        android:layout_column="7"
+        android:layout_gravity="left|top"
+        android:layout_weight="3"
+        android:maxLength="4"
+        android:inputType="time" 
+    	android:digits="0123456789" />
+    
+    <EditText
+        android:id="@+id/edit_notes"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"        
+        android:layout_column="8"
+        android:layout_gravity="left|top"
+        android:layout_weight="8"
+        android:inputType="textNoSuggestions" 
+		android:digits="0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM " />
+    
+    
+</TableRow>

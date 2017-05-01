@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LogActivity$DummySectionFragment" >
+
+    <RelativeLayout
+        android:id="@+id/onGround"
+        android:layout_width="850dp"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/rightCableTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right Winch Cable"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <HorizontalScrollView
+            android:id="@+id/rightCable"
+            android:layout_width="800dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true" >
+
+            <LinearLayout
+                android:id="@+id/rightCableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/leftCableTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rightCable"
+            android:text="Left Winch Cable"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <HorizontalScrollView
+            android:id="@+id/leftCable"
+            android:layout_width="800dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/leftCableTitle" >
+
+            <LinearLayout
+                android:id="@+id/leftCableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/aerotowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/leftCable"
+            android:text="Aerotow"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <HorizontalScrollView
+            android:id="@+id/aerotow"
+            android:layout_width="800dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/aerotowTitle" >
+
+            <LinearLayout
+                android:id="@+id/aerotowLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/inAir"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" >
+        
+        <TextView
+            android:id="@+id/clubAirTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Club Gliders"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <ScrollView
+            android:id="@+id/clubAir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+       		android:layout_alignParentTop="true" >
+            
+            <LinearLayout
+            android:id="@+id/clubAirLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            </LinearLayout>    
+        </ScrollView>
+        
+        <ScrollView
+            android:id="@+id/privateAir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+       		android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp" >
+            
+            
+
+            <LinearLayout
+                android:id="@+id/privateAirLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/privateAirTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Private gliders"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Buttons"
+        android:layout_width="800dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="James" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button1"
+            android:text="is" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button2"
+            android:text="a" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button3"
+            android:text="fool" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/button4"
+            android:text="and" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/button5"
+            android:text="knows" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/button6"
+            android:text="nothing" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button7"
+            android:text="about" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button8"
+            android:text="UI" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button9"
+            android:text="design" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

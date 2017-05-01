@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CGC Launchpoint</string>
+    <string name="action_settings">Settings</string>
+    <string name="log_file_section">Logsheet</string>
+    <string name="launch_view_section">Launchpoint</string>
+    <string name="about_section">About</string>
+
+</resources>
